@@ -1,0 +1,82 @@
+Este es el arreglo de una dimension:
+
+#include <stdio.h>	
+int main () {
+int array [88];
+int number_user;
+int found=0;
+
+for(int i = 0; i<88; i++)
+array[i]= i+1;
+
+ printf("Ingrese un número entre 1 y 88 para buscar");
+    scanf("%d",  &number_user);
+    
+     for (int i = 0; i < 88; i++) {
+        if (array[i] == number_user) {
+            printf("Valor encontrado en la posición %d\n", i);
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("No encontrado\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+Este es el arreglo de dos dimensiones:
+
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int array[81][81];
+    int i, j;
+    int numero_usuario;
+    int k = 0;
+
+    for(i = 0; i < 81; i++) 
+    {
+        for(j = 0; j < 81; j++) 
+        {
+            array[i][j] = k;
+            k++;
+        }
+    }
+
+    printf("Ingrese un número entre 0 y 6560 para buscar: ");
+    scanf("%d", &numero_usuario);
+    
+    int encontrado = 0;
+    
+    for (i = 0; i < 81; i++) 
+    {
+        for (j = 0; j < 81; j++) 
+        {
+            if (array[i][j] == numero_usuario) 
+            {
+                printf("Valor encontrado en la posición [%d, %d]\n", i, j);
+                encontrado = 1;
+                break; 
+            }
+        }
+        
+    }
+    
+    if (!encontrado) 
+    {
+        printf("No encontrado\n");
+    }
+
+    return 0;
+}
