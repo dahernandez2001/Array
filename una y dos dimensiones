@@ -87,6 +87,35 @@ int main()
 
 
 
+
+
+
+/// Ejercicio para hallar area de un cilindor en C ///
+
+#include <stdio.h>
+
+int main()
+{
+float  pi= 3.1416;
+float radio, altura;
+printf ("por favor digita el radio");
+scanf ("%f", &radio);
+printf ("por favor digita la altura");
+scanf ("%f", &altura);
+float area= 2*pi*(radio*altura) + (2*pi*radio*radio);
+printf("el resultado es: %f",area);
+}
+
+
+
+
+
+
+
+
+
+
+
 ///  Ejercicio de menu en C ///
 
 
