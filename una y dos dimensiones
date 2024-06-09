@@ -81,3 +81,41 @@ int main()
     return 0;
 }
 
+
+
+
+
+
+
+///  Ejercicio de menu en C ///
+
+
+#include <stdio.h>
+
+int main()
+{
+    int bus;
+   printf ("Bienvenido\nen este menu, podra consultar las paradas de las rutas y cuales trabajan dias festivos.\nPor favor, elija una de las opciones dijitando el numero correspondeinte de la opcion que desea consultar:\n"
+   "1) C1\n"
+   "2) C2\n"
+   "3) C3\n"
+   "4) Rutas que trabajan dias destivos\n");
+   scanf("%d", &bus);
+   if (bus == 1) {
+       printf("La ruta C1 tiene las siguientes paradas:\n-Parque. KR 19C - CL 56 Sur.\n-Biblioteca. KR 19C - CL 51 Sur.\n-Santa Lucía. AV. Caracas - CL 46 Sur. Vagón\n-Calle 40 Sur. AV. Caracas - CL 40 Sur.\n");
+       }
+    else if (bus == 2) {
+        printf("La ruta C2 tiene las siguientes paradas:\n-Suba - TV. AV. SUBA - KR 91D.\n-21 ángeles. AV. SUBA - KR 83.\n-Gratamira. AV. SUBA - CL 132A.\n-Suba - AV. Boyacá AV. SUBA\n-Niza - Calle 127. AV. SUBA - CL 127D. ");
+        }
+        else if (bus == 3) {
+        printf("La ruta C3 tiene las siguientes paradas:\n-AV. 1° Mayo. AK 10 - CL 17 Sur.\n-Ciudad Jardín - UAN. AK 10 - CL 11 Sur.\n-Policarpa. AK 10 - CL 2 Sur.\n-San Bernardo. AK 10 - CL 1.\n-Bicentenario. AK 10 - CL 6.");
+        }
+    else if (bus == 4) {
+        printf("La ruta C1 es la unica que opera en dias festivos");
+    
+    }
+    else 
+    {
+        printf ("esa opcion no esta en el menu, por favor dijita una que si lo este");
+    }
+}
